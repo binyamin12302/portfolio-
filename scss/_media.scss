@@ -55,8 +55,14 @@
       background-position: 20% 30%;
       position: relative;
 
-      .header-content h1 {
-        font-size: 2.3rem;
+
+      .header-content {
+        padding-top: 9rem;
+
+        h1 {
+          font-size: 2.3rem;
+        }
+
       }
     }
 
