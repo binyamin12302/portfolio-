@@ -1,13 +1,16 @@
 .items {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  gap: 4.5rem;
 }
 
 .item {
   position: relative;
   background: $main-color;
   overflow: hidden;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+   border: 1px solid #8a7f7f;
+  
 
   &::after {
     content: '';
