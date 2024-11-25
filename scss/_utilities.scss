@@ -1,5 +1,8 @@
+@use 'config' as cfg;
+
+// Container
 .container {
-  max-width: $website-width;
+  max-width: cfg.$website-width;
   padding: 0 1.5rem;
   margin: auto;
   overflow: hidden;
@@ -11,6 +14,7 @@
   padding: 0.8rem 2rem;
   transition: all 0.5s;
   border: none;
+  font-weight: 600;
   cursor: pointer;
 }
 
@@ -18,48 +22,51 @@
   &-main {
     @extend %btn-shared;
     color: #333;
-    background-color: $main-color;
+    background-color: cfg.$main-color;
   }
 
   &-light {
     @extend %btn-shared;
     color: #333;
-    background-color: $light-color;
+    background-color: cfg.$light-color;
+    border-radius: 8px;
+    font-size: 1.2rem;
   }
 
   &-dark {
     @extend %btn-shared;
-    color: #f4f4f4;
-    background-color: $dark-color;
+    background-color: cfg.$dark-color;
   }
 }
 
 button[class^='btn-']:hover,
 a[class^='btn-']:hover,
 input[class^='btn-']:hover {
-  background-color: $main-color;
+  background-color: cfg.$medium-color;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 // Backgrounds
 .bg {
   &-main {
-    background: $main-color;
-    color: set-text-color($main-color);
+    background: cfg.$bg-primary;
+    color: cfg.set-text-color(cfg.$main-color);
   }
 
   &-dark {
-    background: $dark-color;
-    color: set-text-color($dark-color);
+    background: cfg.$dark-color;
+    color: cfg.set-text-color(cfg.$dark-color);
   }
 
   &-light {
-    background: $light-color;
-    color: set-text-color($light-color);
+    background: cfg.$light-color;
+    color: cfg.set-text-color(cfg.$light-color);
   }
 
   &-medium {
-    background: $medium-color;
-    color: set-text-color($medium-color);
+    background: cfg.$medium-color;
+    color: cfg.set-text-color(cfg.$medium-color);
   }
 }
 
@@ -122,15 +129,7 @@ input[class^='btn-']:hover {
 .bottom-line {
   height: 2px;
   width: 3rem;
-  background: $main-color;
+  background: cfg.$main-color;
   display: block;
   margin: 0 auto 1rem auto;
-}
-
-.link {
-  color: white;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }

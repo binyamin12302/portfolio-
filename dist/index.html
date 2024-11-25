@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#169ad2">
+  <link rel="preload" href="./img/showcase.jpg" as="image">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet" />
@@ -13,18 +15,18 @@
 </head>
 
 <body>
-  <!-- Header -->
-  <header id="header-home">
-    <div class="container-home">
-      <nav id="main-nav">
+  <!--  Header -->
+  <header id="header" role="banner">
+    <div class="container">
+      <nav id="main-nav" role="navigation">
         <ul>
-          <li><a href="#header-home" class="nav active">Home</a></li>
-          <li><a href="#about-a" class="nav">About</a></li>
+          <li><a href="#header" class="nav active">Home</a></li>
+          <li><a href="#about" class="nav">About</a></li>
           <li><a href="#work-a" class="nav">Work</a></li>
           <li><a href="#contact-a" class="nav">Contact</a></li>
         </ul>
       </nav>
-      <div class="header-content">
+      <div class="header-content text-center ">
         <h1>
           I Am Binyamin Abebe,
           <span class="txt-type" data-wait="3000" data-words='["A Programmer", "A Developer"]'></span>
@@ -32,14 +34,16 @@
         <p class="lead">
           I am searching for my next job as a web developer
         </p>
-        <a href="#work-a" class="btn-light">View My Work</a>
+        <a href="#work-a" class="btn-light" aria-label="Scroll to my projects section">
+          See My Projects
+        </a>
       </div>
     </div>
   </header>
 
 
-  <!--  About-A -->
-  <section id="about-a" class="text-center py-3">
+  <!--  About -->
+  <section id="about" class="text-center py-3">
     <div class="container">
       <h2 class="section-title">About Me</h2>
       <div class="bottom-line"></div>
@@ -47,70 +51,77 @@
         Let me tell you a little about myself...
       </p>
       <div class="about-info">
-        <img src="img/about.jpg" alt="" class="bio-image" />
-        <div class="bio bg-light">
-          <p class="s">
-            Hi, My name is Binyamin Abebe, Looking for a job as a web developer, I have skills in those languages and
-            technologies: <strong>JavaScript, ES6, HTML5, CSS3, Bootstrap, OOP, Socket.io, Express,
-              Sass, jQuery, ReactJS, Redux,
-              Angular, Node.JS, MongoDB, Docker, SQL, MySQL and TypeScript. </strong> I have learned all those languages
-            and
-            technologies with hard work and passion.
-            I strongly believe that someone like me will be a valuable addition to any team.
-          </p>
-          <br>
-          <hr>
+        <img src="img/about.jpg" alt="Binyamin Abebe" class="bio-image" loading="lazy" />
+        <div class="bio">
           <p>
-            <br>
-            <br>
-            My favorite quote is: "I can accept failure, everyone fails at something. But I can't accept not trying."
-            (Michael jordan)
+            Hi, My name is Binyamin Abebe, and I am looking for a job as a web developer. I have skills in the following
+            languages and technologies:
+          </p>
+          <ul>
+            <li>JavaScript, ES6, HTML5, CSS3</li>
+            <li>Bootstrap, Sass, jQuery</li>
+            <li>ReactJS, Redux, Angular</li>
+            <li>Node.JS, Express, Socket.io</li>
+            <li>MongoDB, SQL, MySQL</li>
+            <li>Docker, TypeScript</li>
+          </ul>
+          <p>
+            I have learned all these languages and technologies with hard work and passion. I strongly believe that
+            someone like me would be a valuable addition to any team.
           </p>
         </div>
       </div>
+      <hr class="my-2">
+      <span> My favorite quote is:</span>
+      <p>
+      <blockquote>
+        " I can accept failure, everyone fails at something. But I can't accept not trying. " - Michael Jordan
+      </blockquote>
+      </p>
     </div>
   </section>
 
 
   <!-- Logos -->
-  <section id="about-c" class="py-4 bg-light">
+  <section id="tech-logos" class="py-4 bg-light">
     <div class="container">
-      <div class="about-logos">
-        <img src="./img/about-logos/Html.png" alt="">
-        <img src="./img/about-logos/CSS.png" alt="">
-        <img src="./img/about-logos/JavaScript.png" alt="">
-        <img src="./img/about-logos/React.png" alt="">
-        <img src="./img/about-logos/NodeJS.png" alt="">
-        <img src="./img/about-logos/Typescript.png" alt="">
-        <img src="./img/about-logos/mongoDB.png" alt="">
-        <img src="./img/about-logos/MySQL.png" alt="">
+      <div class="logo-list">
+        <img src="./img/about-logos/Html.png" alt="HTML logo" loading="lazy">
+        <img src="./img/about-logos/CSS.png" alt="CSS logo" loading="lazy">
+        <img src="./img/about-logos/JavaScript.png" alt="JavaScript logo" loading="lazy">
+        <img src="./img/about-logos/React.png" alt="React logo" loading="lazy">
+        <img src="./img/about-logos/NodeJS.png" alt="Node.js logo" loading="lazy">
+        <img src="./img/about-logos/Typescript.png" alt="TypeScript logo" loading="lazy">
+        <img src="./img/about-logos/mongoDB.png" alt="MongoDB logo" loading="lazy">
+        <img src="./img/about-logos/MySQL.png" alt="MySQL logo" loading="lazy">
       </div>
     </div>
   </section>
 
 
-  <!--  About-B  -->
-  <section id="home-c" class="text-center py-2">
+  <!-- Professional Qualities -->
+  <section id="professional-qualities" class="text-center py-2">
     <div class="container">
       <h2 class="section-title">
         What I bring with me
       </h2>
       <div class="bottom-line"></div>
-      <div class="process">
+      <div class="process text-center ">
         <div>
           <i class="fas fa-file-alt fa-4x process-icon my-2">
           </i>
           <h3>consistency</h3>
           <p>
-            Doing my best in every technology I have learned, don't let distractions bother me.
+            Committed to consistency, continuous learning, and leveraging technologies to deliver successful outcomes.
           </p>
         </div>
         <div>
-          <i class="fas fa-user-friends fa-4x process-icon my-2">
+          <i class="fas fa-user-friends fa-4x process-icon my-2 ">
           </i>
           <h3>social</h3>
           <p>
-            I am a very sociable person who likes to help, get to know people and learn from others.
+            A sociable person who enjoys helping others, building meaningful relationships, and constantly learning from
+            those around.
           </p>
         </div>
         <div>
@@ -118,10 +129,10 @@
           </i>
           <h3>SELF DISCIPLINED</h3>
           <p>
-            I developed my discipline, built myself a learning program that brought out the best in me.
+            A self-guided learning process helped strengthen discipline and support steady progress.
           </p>
         </div>
-
+        
       </div>
     </div>
   </section>
@@ -135,104 +146,105 @@
         Check out some of my projects
       </p>
       <div class="items">
-
-
-
         <div class="item">
           <div class="item-image">
-            <img src="img/items/item1.png" alt="" />
+            <img src="img/items/item1.png" alt="Screenshot of News-Y website with CSS Grid design" loading="lazy" />
           </div>
           <div class="item-text">
             <div class="item-text-wrap">
-              <p class="item-text-category">HTML & CSS </p>
-              <h2 class="item-text-title">News - Y</h2>
-              <p> News website with CSS Grid.</p>
-              <a href="https://kind-davinci-6e3928.netlify.app/" target="_blank"><br>
-                <p class="link">TO WEBSITE</p>
-              </a>
-              <a href="https://github.com/binyamin12302/newgrid" target="_blank">
-                <p class="link">TO REPOSITORY</p>
-              </a>
+              <p class="item-text-category text-center">HTML & CSS</p>
+              <h2 class="item-text-title text-center">News - Y</h2>
+              <p class="item-text-body">A responsive news website designed with CSS Grid, showcasing clean layouts and
+                modern design
+                principles.</p>
+              <div class="links-container">
+                <a href="https://kind-davinci-6e3928.netlify.app/" target="_blank" class="link text-center my-1"
+                  aria-label="View live project News-Y">
+                  View Project
+                </a>
+                <a href="https://github.com/binyamin12302/newgrid" target="_blank" class="link text-center"
+                  aria-label="View source code for News-Y">
+                  View Code
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
-
-
-
         <div class="item">
           <div class="item-image">
-            <img src="img/items/item2.png" alt="" />
+            <img src="img/items/item2.png" alt="Screenshot of Movie-App showing movie categories and trailers"
+              loading="lazy" />
           </div>
           <div class="item-text">
             <div class="item-text-wrap">
-              <p class="item-text-category">HTML & CSS & React & Firebase</p>
-              <h2 class="item-text-title">Movie-App</h2>
-              <p>
-                Movie Web App that allows users to view different categories of movies,
-                <br>
-                watch trailers, search for a movie, and add a
-                review to a movie.
+              <p class="item-text-category text-center">HTML & CSS & React & Firebase</p>
+              <h2 class="item-text-title text-center">Movie-App</h2>
+              <p class="item-text-body">
+                A dynamic Movie Web App enabling users to explore movie categories, watch trailers, search movies, and
+                write reviews. Built with React and Firebase for real-time functionality.
               </p>
-              <a href="https://movieapp-71dcd.web.app/" target="_blank"><br>
-                <p class="link">TO WEBSITE</p>
-              </a>
-              <a href="https://github.com/binyamin12302/Movie-App" target="_blank">
-                <p class="link">TO REPOSITORY</p>
-              </a>
+              <div class="links-container">
+                <a href="https://movieapp-71dcd.web.app/" target="_blank" class="link text-center my-1"
+                  aria-label="View live project Movie-App">
+                  View Project
+                </a>
+                <a href="https://github.com/binyamin12302/Movie-App" target="_blank" class="link text-center"
+                  aria-label="View source code for Movie-App">
+                  View Code
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
-
-
-
-
-
-
-        <div class="item .outer-border">
+        <div class="item ">
           <div class="item-image">
-            <img src="img/items/item4.png" alt="" />
+            <img src="img/items/item4.png" alt="Screenshot of Vacations website with real-time vacation management"
+              loading="lazy" />
           </div>
           <div class="item-text">
             <div class="item-text-wrap">
-              <p class="item-text-category">HTML & CSS & React & TypeScript & MySQL & Node </p>
-              <h2 class="item-text-title">Vacations</h2>
-              <p>
-                The vacation website allows you to open an account, follow\unfollow vacations, if<br>
-                you are an admin you can edit, add and delete vacations in real time.
+              <p class="item-text-category text-center">HTML & CSS & React & TypeScript & MySQL & Node </p>
+              <h2 class="item-text-title text-center ">Vacations</h2>
+              <p class="item-text-body">
+                Vacation management platform with user accounts, preferences, and real-time admin controls using MySQL
+                and Node.js.
               </p>
-              <br />
-              <a href="https://github.com/binyamin12302/vacations" target="_blank">
-                <p class="link">TO REPOSITORY</p>
-              </a>
+              <div class="links-container">
+                <a href="https://github.com/binyamin12302/vacations" target="_blank" class="link text-center my-1"
+                  aria-label="View source code for Vacations">
+                  View Code
+                </a>
+              </div>
             </div>
           </div>
         </div>
-
 
         <div class="item">
           <div class="item-image">
-            <img src="img/items/item6.png" alt="" />
+            <img src="img/items/item6.png" alt="Screenshot of Task Board app for managing to-do lists" loading="lazy" />
           </div>
           <div class="item-text">
             <div class="item-text-wrap">
-              <p class="item-text-category">HTML & CSS & JavaScript</p>
-              <h2 class="item-text-title">Task Board</h2>
-              <p>Task Board helps you to create a list of things you want to do.</p>
-              <a href="https://lustrous-baklava-ecbd08.netlify.app/" target="_blank"><br>
-                <p class="link">TO WEBSITE</p>
-              </a>
-              <a href="https://github.com/binyamin12302/ToDo-App" target="_blank">
-                <p class="link">TO REPOSITORY</p>
-              </a>
+              <p class="item-text-category text-center">HTML & CSS & JavaScript</p>
+              <h2 class="item-text-title text-center ">Task Board</h2>
+              <p class="item-text-body">A simple yet effective Task Board application for managing to-do lists, built
+                with JavaScript and CSS
+                for a smooth user experience.</p>
+              <div class="links-container">
+                <a href="https://lustrous-baklava-ecbd08.netlify.app/" target="_blank" class="link text-center my-1"
+                  aria-label="View live project Task Board">
+                  View Project
+                </a>
+                <a href="https://github.com/binyamin12302/ToDo-App" target="_blank" class="link text-center"
+                  aria-label="View source code for Task Board">
+                  View Code
+                </a>
+              </div>
             </div>
           </div>
         </div>
-
-
-
-
 
       </div>
     </div>
@@ -240,7 +252,7 @@
 
 
   <!-- Contact Info -->
-  <section id="contact-a" class="py-3">
+  <section id="contact-a" class="py-3 text-center">
 
     <h2 class="section-title">
       Contact me
@@ -251,41 +263,38 @@
       <div class="contact-info">
 
         <div>
-          <i class="fas fa-envelope fa-2x"></i>
+          <i class="fas fa-envelope fa-2x" aria-label="Email"></i>
           <h3>Email</h3>
           <p><a href="mailto:binyamin12302@gmail.com">binyamin12302@gmail.com</a></p>
         </div>
 
         <div>
-
-          <i class="fab fa-linkedin fa-2x"></i>
-
+          <i class="fab fa-linkedin fa-2x" aria-label="LinkedIn"></i>
           <h3>LinkedIn</h3>
-          <p><a href="https://www.linkedin.com/in/binyamin-abebe-8413561b1/" target="_blank"
+          <p><a href="https://www.linkedin.com/in/binyamin-abebe-293b86335" target="_blank"
               rel="noopener noreferrer">www.linkedin.com/in/binyamin-abebe</a></p>
         </div>
 
 
         <div>
-          <i class="fas fa-phone fa-2x"></i>
+          <i class="fas fa-phone fa-2x" aria-label="Phone"></i>
           <h3>Phone</h3>
           <p>
             <a href="tel:0545714479">(972) 545-714479</a>
           </p>
         </div>
-
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer id="main-footer">
+  <footer id="main-footer" class="text-center">
     <div class="footer-content container">
-      <p>Copyright &copy; 2022. All Rights Reserved</p>
+      <p>Copyright &copy; <span id="year"></span>. All Rights Reserved</p>
       <div class="social">
         <span title="To My GitHub Page"><a href="https://github.com/binyamin12302/" target="_blank"
             rel="noopener noreferrer"><i class="fab fa-github"></i></a></span>
-        <span title="To My LinkedIn Profile"><a href="https://www.linkedin.com/in/binyamin-abebe-8413561b1/"
+        <span title="To My LinkedIn Profile"><a href="https://www.linkedin.com/in/binyamin-abebe-293b86335"
             target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></span>
       </div>
     </div>

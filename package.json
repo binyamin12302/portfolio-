@@ -4,11 +4,11 @@
   "description": "Portfolio website",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
-  },
+  "sass": "npx sass --watch scss:dist/css"
+},
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.14.1"
+    "sass": "^1.81.0"
   }
 }

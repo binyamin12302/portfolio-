@@ -1,20 +1,22 @@
+
 // Variables
+$dark-color: #1e272e;
+$main-color: #169ad2;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
 $website-width: 1280px;
-$main-color   : #169ad2;
-$light-color  : #f4f4f4;
-$medium-color : #ccc;
-$dark-color   : #1e272e;
 $bg-primary   : #0984e3;
 $bg-image     : url('../img/showcase.jpg');
 
-// Set Text Color
-@function set-text-color($color) {
-  @if (lightness($color) > 50) {
-    @return #000;
-  }
+// Set Text Color Function
+@use "sass:color";
 
-  @else {
+@function set-text-color($color) {
+  @if (color.channel($color, "lightness", $space: hsl) > 50) {
+    @return #000;
+  } @else {
     @return #fff;
   }
 }
 
+// Forward variables and functions for use in other files
