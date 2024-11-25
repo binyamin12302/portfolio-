@@ -143,13 +143,15 @@ h4 {
       0 6px 6px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease-in-out;
 
+
     .bio-image {
-      width: 30%;
+      min-width: 30%;
       height: auto;
       border: 3px solid #b78846;
     }
 
     .bio {
+
       display: flex;
       flex-direction: column;
       justify-content: space-between;

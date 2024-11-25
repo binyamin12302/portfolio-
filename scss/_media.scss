@@ -46,7 +46,7 @@
       text-align: center;
 
       .bio-image {
-        width: 80%;
+        width: 90%;
         margin: 0 auto 1rem;
       }
 
@@ -88,14 +88,10 @@
     #main-nav {
       display: flex;
       justify-content: center;
-
-      li {
-        padding: 1rem;
-      }
     }
 
     .header-content {
-      padding-top: 9rem;
+      margin-top: 40%;
 
       h1 {
         font-size: 2.3rem;
@@ -103,9 +99,8 @@
     }
   }
 
-  #professional-qualities .process,
-  .items {
-    grid-template-columns: 1fr;
+  .process {
+    display: block !important;
   }
 
   #tech-logos {
@@ -159,8 +154,8 @@
   }
 
   #header #main-nav ul li {
-    padding: 1rem 1.3rem;
-  }
+    margin: -3px;
+}
 
   .item-text-category {
     font-size: 0.4rem;

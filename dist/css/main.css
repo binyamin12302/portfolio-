@@ -284,7 +284,7 @@ input[class^=btn-]:hover {
     text-align: center;
   }
   #about .about-info .bio-image {
-    width: 80%;
+    width: 90%;
     margin: 0 auto 1rem;
   }
   #about .about-info .bio {
@@ -318,18 +318,14 @@ input[class^=btn-]:hover {
     display: flex;
     justify-content: center;
   }
-  #header #main-nav li {
-    padding: 1rem;
-  }
   #header .header-content {
-    padding-top: 9rem;
+    margin-top: 40%;
   }
   #header .header-content h1 {
     font-size: 2.3rem;
   }
-  #professional-qualities .process,
-  .items {
-    grid-template-columns: 1fr;
+  .process {
+    display: block !important;
   }
   #tech-logos {
     display: none;
@@ -369,7 +365,7 @@ input[class^=btn-]:hover {
     font-size: 2rem;
   }
   #header #main-nav ul li {
-    padding: 1rem 1.3rem;
+    margin: -3px;
   }
   .item-text-category {
     font-size: 0.4rem;
@@ -508,7 +504,7 @@ h4 {
   transition: box-shadow 0.3s ease-in-out;
 }
 #about .about-info .bio-image {
-  width: 30%;
+  min-width: 30%;
   height: auto;
   border: 3px solid #b78846;
 }
